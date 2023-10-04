@@ -3,43 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>shopify</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!--sem formatação = trabalhando com tela de tamanho de 1250px  -->
     <main>
-      <section class="hero">
-        <div class="hero-bloc">
-          <img src="images/shopify-logo-screen.png" alt="" class="logo" />
-          <h1 class="hero-title">Sell online with Shopify</h1>
-          <p class="hero-text">Trusted by millions of businesses worldwide</p>
-          <form action="" class="hero-form">
+      <section
+        class="w-full bg-[#007e62] relative max-[770px]:pb-32 max-[395px]:pb-20 pb-56"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            src="images/shopify-logo-screen.png"
+            alt=""
+            class="inline-block max-[770px]:h-9 max-[395px]:h-7 h-10 w-auto max-[770px]:mt-7 max-[395px]:mt-5 mt-8"
+          />
+          <h1
+            class="max-[770px]:mt-10 max-[395px]:mt-8 mt-12 max-[770px]:text-4xl max-[395px]:text-3xl text-5xl text-white tracking-wide font-semibold"
+          >
+            Sell online with Shopify
+          </h1>
+          <p
+            class="max-[770px]:mt-7 max-[395px]:mt-4 mt-9 max-[770px]:text-lg max-[395px]:text-lg text-2xl text-white font-light"
+          >
+            Trusted by millions of businesses worldwide
+          </p>
+          <form
+            action=""
+            class="max-[770px]:mt-7 max-[395px]:mt-6 mt-9 flex max-[395px]:flex-col max-[395px]:items-center max-[395px]:gap-y-3 flex-wrap justify-center max-[770px]:gap-4 gap-6"
+          >
             <input
               id="email"
               type="email"
               placeholder="Enter your email address"
+              class="max-[770px]:h-10 max-[395px]:h-8 h-12 border-none rounded-[4px] max-[770px]:w-80 max-[395px]:w-60 w-96 px-4 shadow-[0_0_10px_#00000030] max-[770px]:text-lg max-[395px]:text-sm text-xl"
             />
-            <button class="btn btn--hero">Start free trial</button>
+            <button
+              class="max-[770px]:w-36 max-[395px]:w-32 w-40 max-[770px]:h-10 max-[395px]:h-9 h-12 rounded-[4px] border-none cursor-pointer max-[770px]:text-sm max-[395px]:text-xs text-base font-semibold shadow-[0_0_10px_#00000030] bg-[#212326] text-white"
+            >
+              Start free trial
+            </button>
           </form>
-          <span class="hero-ast"
+          <span
+            class="max-[770px]:mt-4 max-[395px]:mt-3 mt-6 text-center max-[770px]:text-center max-[395px]:text-[10px] text-xs text-white font-thin max-[395px]:leading-3 leading-4 max-[770px]:max-w-[450px] max-[395px]:max-w-[290px] max-w-[500px]"
             >Try Shopify free for 14 days, no credit card required. By entering
             your email, you agree to receive marketing emails from Shopify.
           </span>
-          <img src="images/store-hero.avif" alt="" class="hero-img" />
+          <div>
+            <img
+              src="images/wave.png"
+              alt=""
+              class="absolute -bottom-1 left-0 w-full max-[770px]:h-24 max-[395px]:h-16 h-52 bg-cover bg-no-repeat"
+            />
+          </div>
+          <img
+            src="images/store-hero.avif"
+            alt=""
+            class="absolute -bottom-16 max-[770px]:w-48 max-[395px]:w-36"
+          />
         </div>
       </section>
 
-      <section class="features">
-        <div class="features-grid">
-          <div class="feature-bloc">
+      <section
+        class="max-[770px]:mt-28 mt-32 flex justify-center max-[770px]:px-20 max-[560px]:px-14 px-36"
+      >
+        <div
+          class="grid max-[395px]:grid-cols-1 max-[395px]:gap-y-8 grid-cols-3 max-[770px]:gap-x-10 max-[560px]:gap-x-7 gap-x-12"
+        >
+          <div
+            class="flex flex-col max-[395px]:items-center items-start max-w-[300px]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="f-icon"
+              class="max-[770px]:h-10 h-12 text-[#008060]"
             >
               <path
                 stroke-linecap="round"
@@ -48,19 +88,27 @@
               />
             </svg>
 
-            <h3 class="bloc-title">Customizable templates</h3>
-            <p class="bloc-text">
+            <h3
+              class="max-[770px]:mt-4 mt-6 max-[770px]:text-base text-lg font-semibold text-[#212326]"
+            >
+              Customizable templates
+            </h3>
+            <p
+              class="max-[395px]:text-center max-[770px]:mt-2 max-[395px]:mt-1 mt-4 text-[#73777c] max-[770px]:text-sm text-base leading-6 font-extralight"
+            >
               Free website desians to launch vour store quickly and easily.
             </p>
           </div>
-          <div class="feature-bloc">
+          <div
+            class="flex flex-col max-[395px]:items-center items-start max-w-[300px]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="f-icon"
+              class="max-[770px]:h-10 h-12 text-[#008060]"
             >
               <path
                 stroke-linecap="round"
@@ -68,20 +116,28 @@
                 d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
               />
             </svg>
-            <h3 class="bloc-title">All in one</h3>
-            <p class="bloc-text">
+            <h3
+              class="max-[770px]:mt-4 mt-6 max-[770px]:text-base text-lg font-semibold text-[#212326]"
+            >
+              All in one
+            </h3>
+            <p
+              class="max-[395px]:text-center max-[770px]:mt-2 max-[395px]:mt-1 mt-4 text-[#73777c] max-[770px]:text-sm text-base leading-6 font-extralight"
+            >
               Shopiry takes care of evervthina from marketing and payments to
               secure transactions and shipping.
             </p>
           </div>
-          <div class="feature-bloc">
+          <div
+            class="flex flex-col max-[395px]:items-center items-start max-w-[300px]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="f-icon"
+              class="max-[770px]:h-10 h-12 text-[#008060]"
             >
               <path
                 stroke-linecap="round"
@@ -90,50 +146,114 @@
               />
             </svg>
 
-            <h3 class="bloc-title">A safe and efficient platform</h3>
-            <p class="bloc-text">
+            <h3
+              class="max-[770px]:mt-4 mt-6 max-[770px]:text-base text-lg font-semibold text-[#212326]"
+            >
+              A safe and efficient platform
+            </h3>
+            <p
+              class="max-[395px]:text-center max-[770px]:mt-2 max-[395px]:mt-1 mt-4 text-[#73777c] max-[770px]:text-sm text-base leading-6 font-extralight"
+            >
               Millions of users trust Shopity to manage their online stores.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="featured-in">
-        <div class="logos-in">
-          <img class="img-in" src="images/logo-cee.png" alt="" />
-          <img class="img-in" src="images/logo-nalata.png" alt="" />
-          <img class="img-in" src="images/logo-kirrin.png" alt="" />
-          <img class="img-in" src="images/logo-tokyo.png" alt="" />
-          <img class="img-in" src="images/logo-meso.png" alt="" />
-          <img class="img-in" src="images/logo-coco.webp" alt="" />
-          <img class="img-in" src="images/logo-museum.png" alt="" />
-          <img class="img-in" src="images/logo-adore.png" alt="" />
+      <section
+        class="max-[770px]:mt-24 mt-36 max-[770px]:px-20 max-[560px]:px-14 max-[395px]:px-10 px-36"
+      >
+        <div
+          class="flex max-[395px]:flex-wrap max-[395px]:justify-center max-[395px]:gap-3 max-[395px]:gap-y-2 justify-around items-center max-[395px]:py-7 py-10 border-t border-t-[#d3d5d9]"
+        >
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 w-20 brightness-0 opacity-60"
+            src="images/logo-cee.png"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 max-[560px]:hidden max-[395px]:inline-block w-20 brightness-0 opacity-60"
+            src="images/logo-nalata.png"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 w-20 brightness-0 opacity-60"
+            src="images/logo-kirrin.png"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 w-20 brightness-0 opacity-60"
+            src="images/logo-tokyo.png"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 w-20 brightness-0 opacity-60"
+            src="images/logo-meso.png"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:hidden max-[395px]:inline-block w-20 brightness-0 opacity-60"
+            src="images/logo-coco.webp"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 w-20 brightness-0 opacity-60"
+            src="images/logo-museum.png"
+            alt=""
+          />
+          <img
+            class="max-[395px]:-m-1 max-[770px]:w-16 w-20 brightness-0 opacity-60"
+            src="images/logo-adore.png"
+            alt=""
+          />
         </div>
       </section>
 
-      <section class="testimonial">
-        <blockquote class="testimonial-text">
+      <section
+        class="max-[770px]:mt-14 max-[395px]:mt-12 mt-24 w-full flex flex-col items-center justify-center"
+      >
+        <blockquote
+          class="text-[1.5rem] text-[#212326] font-normal max-[770px]:text-xl max-[395px]:text-lg max-[770px]:max-w-[60%] max-[395px]:max-w-[70%] max-w-[54%] text-center"
+        >
           "Shopify is better than any other platform we've played with, and
           we've played with them all."
         </blockquote>
-        <p class="author">JONATHON BAYME, CEO OF THEORY11</p>
-        <div class="btn btn--testimonial btn--flex">
-          <a class="a-btn" href="#email"> Start free trial </a>
+        <p
+          class="max-[770px]:mt-5 mt-6 uppercase max-[770px]:text-xs max-[395px]:text-[10px] text-sm font-medium text-[#43474b]"
+        >
+          JONATHON BAYME, CEO OF THEORY11
+        </p>
+        <div
+          class="max-[770px]:w-36 max-[395px]:w-28 w-40 max-[770px]:h-10 max-[395px]:h-8 h-12 rounded-[4px] border-none cursor-pointer max-[770px]:text-sm max-[395px]:text-xs text-base font-semibold shadow-[0_0_10px_#00000030] bg-[#007e62] text-white transition-all duration-300 hover:bg-[#007158] flex justify-center items-center mt-12"
+        >
+          <a class="text-white" href="#email"> Start free trial </a>
         </div>
       </section>
 
-      <section class="faq">
-        <h2 class="faq-title">FAQs</h2>
-        <div class="menu-faq">
-          <div class="bloc-faq">
-            <p class="faq-menu">What is Shopify and how does it work?</p>
+      <section
+        class="max-[770px]:mt-16 mt-24 bg-[#faf9f8] max-[770px]:pb-16 pb-24"
+      >
+        <h2
+          class="max-[770px]:pt-16 max-[395px]:pt-14 pt-24 text-center text-[#1e4b40] max-[770px]:text-2xl text-3xl font-light"
+        >
+          FAQs
+        </h2>
+        <div class="max-[770px]:mt-9 max-[395px]:mt-7 mt-12 flex flex-col">
+          <div
+            class="group flex justify-between items-center max-[770px]:w-[70%] max-[395px]:w-[75%] w-[55%] my-0 mx-auto border-b-[1px] border-b-[#d3d5d9]"
+          >
+            <p
+              class="text-[#212326] max-[770px]:text-base max-[395px]:text-xs text-lg max-[770px]:py-4 py-5 cursor-pointer transition-all duration-300 hover:text-[#1e4b40] hover:drop-shadow-md hover:drop-shadow-[#1e4b4020]"
+            >
+              What is Shopify and how does it work?
+            </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="plus-faq"
+              class="group-hover:text-[#1e4b40] max-[770px]:h-[16px] max-[395px]:h-[12px] h-[24px] max-[770px]:w-[16px] max-[395px]:w-[12px] w-[24px] cursor-pointer transition-all duration-300 hover:rotate-180 group-hover:rotate-180"
             >
               <path
                 stroke-linecap="round"
@@ -142,15 +262,21 @@
               />
             </svg>
           </div>
-          <div class="bloc-faq">
-            <p class="faq-menu">How much does Shopify cost?</p>
+          <div
+            class="group flex justify-between items-center max-[770px]:w-[70%] max-[395px]:w-[75%] w-[55%] my-0 mx-auto border-b-[1px] border-b-[#d3d5d9]"
+          >
+            <p
+              class="text-[#212326] max-[770px]:text-base max-[395px]:text-xs text-lg max-[770px]:py-4 py-5 cursor-pointer transition-all duration-300 hover:text-[#1e4b40] hover:drop-shadow-md hover:drop-shadow-[#1e4b4020]"
+            >
+              How much does Shopify cost?
+            </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="plus-faq"
+              class="group-hover:text-[#1e4b40] max-[770px]:h-[16px] max-[395px]:h-[12px] h-[24px] max-[770px]:w-[16px] max-[395px]:w-[12px] w-[24px] cursor-pointer transition-all duration-300 hover:rotate-180 group-hover:rotate-180"
             >
               <path
                 stroke-linecap="round"
@@ -159,15 +285,21 @@
               />
             </svg>
           </div>
-          <div class="bloc-faq">
-            <p class="faq-menu">Can I use my own domain name with Shopify?</p>
+          <div
+            class="group flex justify-between items-center max-[770px]:w-[70%] max-[395px]:w-[75%] w-[55%] my-0 mx-auto border-b-[1px] border-b-[#d3d5d9]"
+          >
+            <p
+              class="text-[#212326] max-[770px]:text-base max-[395px]:text-xs text-lg max-[770px]:py-4 py-5 cursor-pointer transition-all duration-300 hover:text-[#1e4b40] hover:drop-shadow-md hover:drop-shadow-[#1e4b4020]"
+            >
+              Can I use my own domain name with Shopify?
+            </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="plus-faq"
+              class="group-hover:text-[#1e4b40] max-[770px]:h-[16px] max-[395px]:h-[12px] h-[24px] max-[770px]:w-[16px] max-[395px]:w-[12px] w-[24px] cursor-pointer transition-all duration-300 hover:rotate-180 group-hover:rotate-180"
             >
               <path
                 stroke-linecap="round"
@@ -176,8 +308,12 @@
               />
             </svg>
           </div>
-          <div class="bloc-faq">
-            <p class="faq-menu">
+          <div
+            class="group flex justify-between items-center max-[770px]:w-[70%] max-[395px]:w-[75%] w-[55%] my-0 mx-auto border-b-[1px] border-b-[#d3d5d9]"
+          >
+            <p
+              class="text-[#212326] max-[770px]:text-base max-[395px]:text-xs text-lg max-[770px]:py-4 py-5 cursor-pointer transition-all duration-300 hover:text-[#1e4b40] hover:drop-shadow-md hover:drop-shadow-[#1e4b4020]"
+            >
               Do I need to be a designer or developer to use Shopify?
             </p>
             <svg
@@ -186,7 +322,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="plus-faq"
+              class="group-hover:text-[#1e4b40] max-[770px]:h-[16px] max-[395px]:h-[12px] h-[24px] max-[770px]:w-[16px] max-[395px]:w-[12px] w-[24px] cursor-pointer transition-all duration-300 hover:rotate-180 group-hover:rotate-180"
             >
               <path
                 stroke-linecap="round"
@@ -199,9 +335,17 @@
       </section>
     </main>
     <footer>
-      <div class="footer">
-        <a href="" class="a-footer">Terms of Service</a>
-        <a href="" class="a-footer">Privacy Policy</a>
+      <div class="text-end max-[770px]:pr-20 max-[395px]:pr-6 pr-36">
+        <a
+          href=""
+          class="inline-block max-[770px]:text-sm max-[395px]:text-xs max-[770px]:my-3 my-5 max-[770px]:mx-2 max-[395px]:mx-1 mx-3 cursor-pointer visited:decoration-none visited:text-[#007e62] max-[770px]:visited:text-xs visited:text-base font-light"
+          >Terms of Service</a
+        >
+        <a
+          href=""
+          class="inline-block max-[770px]:text-sm max-[395px]:text-xs max-[770px]:my-3 my-5 max-[770px]:mx-2 max-[395px]:mx-1 mx-3 cursor-pointer visited:decoration-none visited:text-[#007e62] max-[770px]:visited:text-xs visited:text-base font-light"
+          >Privacy Policy</a
+        >
       </div>
     </footer>
   </body>
